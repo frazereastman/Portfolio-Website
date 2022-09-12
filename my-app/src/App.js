@@ -58,8 +58,9 @@ class App extends React.Component {
         </div>
         <div className='body-text center'>
           <p className='body-text-content'>
-            .who-is-frazer <br />
-            &nbsp; &nbsp;age: 26;
+            .who-is-frazer &#123;
+            <br />
+            &nbsp;&nbsp;age: 26;
             <br />
             &nbsp; &nbsp;personality: creative;
             <br />
@@ -70,6 +71,7 @@ class App extends React.Component {
             &nbsp; &nbsp;location: Sheffield-UK;
             <br />
             &nbsp; &nbsp;projects: click-here; <br />
+            &#125;
           </p>
         </div>
         <div className='squares-grid'>
