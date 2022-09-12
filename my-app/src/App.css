@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ebcfb2;
+  display: grid;
+  grid-template-columns: minmax(10vw, 100px) 40vw 50vw;
+  grid-template-rows: minmax(10vh, 60px) 1fr 3fr 1fr;
+  grid-template-areas:
+    'header header header'
+    'socials . .'
+    'socials body-text shapes'
+    'socials . .';
+}
+
+/* Styling for social icon container. */
+.socials {
+  grid-area: socials;
+  width: 100px;
+  max-width: 10vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.body-text {
+  grid-area: body-text;
+}
+
+.body-text-content {
+  font-family: consolas;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #336edf;
+}
+
+.squares-grid {
+  grid-area: shapes;
+  height: 100%;
+  max-height: 60vh;
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10%;
+}
+
+.square {
+  background-color: red;
+}
